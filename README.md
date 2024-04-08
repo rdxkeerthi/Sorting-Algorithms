@@ -23,6 +23,24 @@ i)	#Selection Sort
 
 
 
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: KEERTHIVASAN M
+RegisterNumber: 212223100021
+'''
+def selection_sort(nums):
+    for i in range(len(nums)):
+        low=i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[low]:
+                low=j
+        nums[i],nums[low]=nums[low],nums[i]
+list_of_nums=eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
+    
+    
+    
 
 
 ```
@@ -31,12 +49,33 @@ ii)	#Insertion Sort
 
 
 
+''' 
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by: KEERTHIVASAN M
+RegisterNumber: 212223100021
+'''
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        item_to_insert=nums[i]
+        j=i-1
+        while j>=0 and nums[j]>item_to_insert:
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=item_to_insert
+list_of_nums=eval(input())
+insertion_sort(list_of_nums)
+print(list_of_nums)
+    
+    
 
 
 
 ```
 
 ## Output:
+![Screenshot 2024-04-08 172149](https://github.com/rdxkeerthi/Sorting-Algorithms/assets/147473120/779563b2-0284-4a20-a5f3-fccf7fc6ec18)
+
+![Screenshot 2024-04-08 172301](https://github.com/rdxkeerthi/Sorting-Algorithms/assets/147473120/13eaadcc-9978-4649-b470-1b30098a8c90)
 
 
 ## Result:
